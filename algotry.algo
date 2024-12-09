@@ -1,0 +1,18 @@
+count1 = 0
+count2 = 0 
+Set ch to input_string
+
+For i = 0 to (length of ch) - 1 Do
+    If ch[i] is in ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"] Then
+        count2 += 1    
+    End If
+    If ch[i] = " " Then
+        count1 += 1
+    End If
+End For
+a = length of ch
+count2 += 1
+
+Print "Character count: " + a
+Print "Word count: " + count1
+Print "Vowel count: " + count2
